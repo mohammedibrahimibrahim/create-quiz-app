@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(get1.gif) no-repeat center center / cover;
+    /* background-image: url(get1.gif); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: url(pit.gif) no-repeat center center / cover;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 650px; /* Base width */
+    padding: 20px;
+    text-align: center;
+    height: 70vh;
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+button:hover {
+    background-color: #010f1f;
+}
+
+#apps {
+    font-size: 25px;
+    margin: 30px;
+}
+@media (max-width: 1075px) {
+    .container {
+        width: 80%; /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #apps {
+        font-size: 20px; /* Smaller font for smaller screens */
+    }
+    button {
+        padding: 12px 30px; /* Adjust button size */
+        font-size: 15px; /* Smaller font size for buttons */
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 10px; /* Reduce padding */
+    }
+    #apps {
+        font-size: 18px; /* Further reduce font size */
+    }
+    button {
+        padding: 10px 20px; /* Further reduce button size */
+        font-size: 14px; /* Further reduce font size */
+    }
+}
+
+@media (max-width: 400px) {
+    #apps {
+        font-size: 16px; /* Minimum font size */
+    }
+    button {
+        padding: 8px 15px; /* Minimum button size */
+        font-size: 13px; /* Minimum button font size */
+    }
+}
